@@ -1,0 +1,25 @@
+.form-link {
+    padding-left: 5px;
+    color: var(--aсcent-color);
+    text-decoration: underline;
+}
+
+.form-btn {
+    display: block;
+    margin: 0px auto;
+    padding: 10px 52px;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+
+    color: var(--bg-color);
+    background: var(--aсcent-color);
+    cursor: pointer;
+    border: 1px solid transparent;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
