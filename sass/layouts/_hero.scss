@@ -48,14 +48,18 @@
   background: var(--aсcent-color);
 }
 
-.excellence__list {
-  display: flex;
-  align-items: flex-start;
+// .excellence__list {
+//   // display: flex;
+//   // align-items: flex-start;
+// }
+
+.excellence__item{
+  width: 100%;
 }
 
-.excellence__list .excellence__item + .excellence__item {
-  margin-left: 30px;
-}
+// .excellence__list .excellence__item + .excellence__item {
+//   margin-left: 30px;
+// }
 
 .excellence__link {
   display: flex;
@@ -63,7 +67,7 @@
   justify-content: center;
 
   margin-bottom: 30px;
-  width: 270px;
+  width: 100%;
   height: 120px;
 
   background: var(--hero-team-bg-color);
@@ -78,6 +82,7 @@
   text-transform: uppercase;
   color: var(--title-text-color);
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .excellence__text {
@@ -85,12 +90,16 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--grey-text-color);
-  width: 270px;
+  width: 100%;
+}
+
+.excellence .excellence__item + .excellence__item {
+  margin-top: 60px;
 }
 
 .clients,
 .excellence {
-  padding: 94px 0px 94px 0px;
+  padding: 60px 0px 60px 0px;
 }
 
 .clients__title {
