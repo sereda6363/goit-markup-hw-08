@@ -6,12 +6,16 @@
 .navigation__logo {
   display: block;
 
-  margin-right: 93px;
+  // margin-right: 93px;
+  margin: 16px auto 16px 0px;
   font-family: "Raleway";
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-
+  // font-size: 26px;
+  // line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  
   color: var(--logo-black-color);
 }
 

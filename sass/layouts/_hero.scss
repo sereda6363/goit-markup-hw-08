@@ -3,8 +3,10 @@
   background-position: center;
   text-align: center;
 
-  max-width: 1600px;
-  padding: 200px 0px 200px 0px;
+  // max-width: 1600px;
+  width: 100%;
+  // padding: 200px 0px 200px 0px;
+  padding: 118px 0px 118px 0px;
   margin-left: auto;
   margin-right: auto;
 
@@ -20,12 +22,19 @@
   text-align: center;
   text-transform: uppercase;
 
-  margin-bottom: 30px;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
+  // margin-bottom: 30px;
+  // font-weight: 900;
+  // font-size: 44px;
+  // line-height: 1.36;
+  // letter-spacing: 0.06em;
 
+  margin-bottom: 40px;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  // text-align: center;
+  letter-spacing: 0.06em;
+  
   color: var(--white-text-color);
 }
 
@@ -144,7 +153,6 @@
 // }
 
 .clients__item {
-  
   width: 100%;
   @media screen and (min-width:480px) {
     width: calc((100% - 30px) / 2);
@@ -189,7 +197,7 @@
   padding-bottom: 94px;
 
   @media screen and (max-width:1199px) {
-  position: absolute;
+    position: absolute;
     white-space: nowrap;
     width: 1px;
     height: 1px;
