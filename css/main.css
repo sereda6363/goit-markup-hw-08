@@ -93,6 +93,11 @@ body {
     max-width: 768px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
 
 .header {
   background-color: var(--bg-color);
@@ -262,6 +267,11 @@ body {
   flex-wrap: wrap;
   gap: 30px;
 }
+@media screen and (min-width: 1200px) {
+  .excellence__list {
+    flex-wrap: nowrap;
+  }
+}
 
 .excellence__item {
   width: 100%;
@@ -269,6 +279,11 @@ body {
 @media screen and (min-width: 768px) {
   .excellence__item {
     width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .excellence__item {
+    width: calc((100% - 30px) / 4);
   }
 }
 
