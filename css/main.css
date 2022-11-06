@@ -88,6 +88,11 @@ body {
     max-width: 480px;
   }
 }
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
 
 .header {
   background-color: var(--bg-color);
@@ -252,8 +257,19 @@ body {
   background: var(--aсcent-color);
 }
 
+.excellence__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
 .excellence__item {
   width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .excellence__item {
+    width: calc((100% - 30px) / 2);
+  }
 }
 
 .excellence__link {
@@ -284,10 +300,6 @@ body {
   letter-spacing: 0.03em;
   color: var(--grey-text-color);
   width: 100%;
-}
-
-.excellence .excellence__item + .excellence__item {
-  margin-top: 60px;
 }
 
 .clients,

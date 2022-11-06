@@ -48,13 +48,18 @@
   background: var(--aсcent-color);
 }
 
-// .excellence__list {
-//   // display: flex;
-//   // align-items: flex-start;
-// }
+.excellence__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  // align-items: flex-start;
+}
 
-.excellence__item{
+.excellence__item {
   width: 100%;
+  @media screen and (min-width:768px) {
+    width: calc((100% - 30px) / 2);
+  }
 }
 
 // .excellence__list .excellence__item + .excellence__item {
@@ -93,9 +98,9 @@
   width: 100%;
 }
 
-.excellence .excellence__item + .excellence__item {
-  margin-top: 60px;
-}
+// .excellence .excellence__item + .excellence__item {
+//   margin-top: 30px;
+// }
 
 .clients,
 .excellence {
