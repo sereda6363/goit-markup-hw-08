@@ -59,6 +59,7 @@ body {
   --footer-contacts-color: rgba(255, 255, 255, 0.6);
   --body-bg-color: #2f303a;
   --grey-text-color: #757575;
+  --bg-gradient: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4));
 }
 
 @font-face {
@@ -114,6 +115,11 @@ body {
   letter-spacing: 0.03em;
   color: var(--logo-black-color);
 }
+@media screen and (min-width: 768px) {
+  .navigation__logo {
+    margin: 26px 88px 26px 0px;
+  }
+}
 
 .logo__half {
   color: var(--aсcent-color);
@@ -125,15 +131,31 @@ body {
   align-items: center;
 }
 
-.menu,
+.menu {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+}
+
 .connection {
   display: none;
 }
 @media screen and (min-width: 768px) {
-  .menu,
-.connection {
+  .connection {
     display: flex;
     align-items: center;
+    margin-left: 97px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .connection {
+    display: flex;
+    align-items: center;
+    margin-left: 318px;
   }
 }
 
@@ -142,8 +164,10 @@ body {
   padding-bottom: 32px;
 }
 
-.menu .menu__item + .menu__item {
-  margin-left: 50px;
+@media screen and (min-width: 768px) {
+  .menu .menu__item + .menu__item {
+    margin-left: 50px;
+  }
 }
 
 .menu__link {
@@ -177,9 +201,14 @@ body {
 }
 
 .connect {
-  display: flex;
+  display: block;
   align-items: center;
   margin-left: auto;
+}
+@media screen and (min-width: 1200px) {
+  .connect {
+    display: flex;
+  }
 }
 
 .connect__item {
@@ -190,13 +219,22 @@ body {
 .connect__email {
   display: flex;
   align-items: center;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-right: 30px;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  font-size: 12px;
+  line-height: 1.16;
+  margin-bottom: 5px;
+  margin-right: 0px;
   color: var(--grey-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .connect__email {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    margin-bottom: 0px;
+  }
 }
 .connect__email:hover, .connect__email:focus {
   color: var(--aсcent-color);
@@ -204,7 +242,12 @@ body {
 
 .connect__icon {
   fill: currentColor;
-  margin-right: 10px;
+  margin-right: 8px;
+}
+@media screen and (min-width: 1200px) {
+  .connect__icon {
+    margin-right: 10px;
+  }
 }
 
 .connect__tel {
@@ -212,10 +255,19 @@ body {
   align-items: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  font-size: 12px;
+  line-height: 1.16;
+  margin-top: 5px;
   color: var(--grey-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .connect__tel {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    margin-top: 0px;
+    margin-left: 30px;
+  }
 }
 .connect__tel:hover, .connect__tel:focus {
   color: var(--aсcent-color);
@@ -239,29 +291,59 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
-  width: 100%;
+  width: 480px;
   padding: 118px 0px 118px 0px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg.jpg);
+  background-image: var(--bg-gradient), url(/images/hero-bg-mob.jpg);
   background-color: var(--body-bg-color);
+}
+@media screen and (max-width: 480px) {
+  .hero {
+    background-image: var(--bg-gradient), url(/images/hero-bg-tablet.jpg);
+    background-size: cover;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: var(--bg-gradient), url(/images/hero-bg-tablet.jpg);
+    width: 768px;
+    background-size: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 200px 0px 200px 0px;
+    background-image: var(--bg-gradient), url(/images/bg.jpg);
+    width: 1200px;
+    background-size: none;
+  }
 }
 
 .hero-title {
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.62;
   letter-spacing: 0.06em;
   color: var(--white-text-color);
 }
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+  }
+}
 
 .hero-btn {
   display: inline-block;
   margin: 0px auto;
-  padding: 10px 32px;
+  padding: 10px 24px;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
