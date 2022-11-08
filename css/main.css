@@ -99,6 +99,13 @@ body {
   }
 }
 
+.container-mob {
+  max-width: 100%;
+  padding-left: 40px;
+  padding-right: 17px;
+  margin: 0 auto;
+}
+
 .header {
   background-color: var(--bg-color);
   border-bottom: 1px solid var(--header-color);
@@ -276,8 +283,59 @@ body {
 .menu-open-btn {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-right: 8px;
+  margin-left: auto;
+}
+
+.mob-menu {
+  position: fixed;
+  top: 0;
+  background-color: var(--bg-color);
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  padding-top: 13px;
+  padding-bottom: 40px;
+}
+
+.menu-close-btn {
+  display: block;
+  margin-left: auto;
+  border: none;
+  background-color: transparent;
+  padding: 8px;
+}
+
+.mob-menu-link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.mob-menu-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mob-menu-list {
+  margin-bottom: 302px;
+}
+
+.mob-connect-tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+  margin-bottom: 32px;
+}
+
+.mob-connect-email {
+  margin-top: 32px;
+}
+
+.mob-soc-list {
+  display: flex;
 }
 
 .visually-hidden {
