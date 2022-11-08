@@ -30,7 +30,6 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  width: 100%;
 }
 
 body {
@@ -129,6 +128,7 @@ body {
 .transfer {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .menu {
@@ -271,6 +271,13 @@ body {
 }
 .connect__tel:hover, .connect__tel:focus {
   color: var(--aсcent-color);
+}
+
+.menu-open-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 8px;
 }
 
 .visually-hidden {
