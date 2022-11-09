@@ -388,6 +388,7 @@ body {
 }
 
 .mob-soc-link {
+  font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
@@ -785,17 +786,9 @@ body {
   flex-wrap: wrap;
   align-items: baseline;
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .footer {
     padding: 60px 0px 60px 0px;
-  }
-}
-
-@media screen and (min-width: 767px) {
-  .footer-flex {
-    display: flex;
-    align-items: baseline;
-    flex-wrap: wrap;
   }
 }
 
@@ -825,22 +818,6 @@ body {
 }
 .footer-icon-list .footer-icon-item + .footer-icon-item {
   margin-left: 10px;
-}
-
-.footer-right-contacts {
-  margin-left: 0px;
-  margin-bottom: 60px;
-  text-align: center;
-}
-@media screen and (min-width: 768px) {
-  .footer-right-contacts {
-    margin-left: 165px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .footer-right-contacts {
-    margin-left: 95px;
-  }
 }
 
 .footer-icon-link {
@@ -921,9 +898,55 @@ body {
   margin-bottom: 60px;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .left-contacts {
+    margin-left: 0px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .left-contacts {
     margin-bottom: 0px;
+  }
+}
+
+.footer-right-contacts {
+  margin-left: 0px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .footer-right-contacts {
+    margin-top: 2px;
+    margin-left: 0px;
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-right-contacts {
+    margin-left: 95px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-column {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-flex {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
   }
 }
 
@@ -932,7 +955,8 @@ body {
 }
 @media screen and (min-width: 768px) {
   .subscription-footer {
-    margin: 0px 0px 0px auto;
+    margin: auto;
+    width: 450px;
   }
 }
 
@@ -992,12 +1016,6 @@ body {
   border-radius: 4px;
   margin-top: 20px;
 }
-@media screen and (min-width: 768px) {
-  .subscription-btn {
-    margin: 0px 0px 0px 12px;
-  }
-}
-
 .subscription-modal-icon {
   position: absolute;
   fill: currentColor;

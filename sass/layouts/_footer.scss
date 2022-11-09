@@ -5,26 +5,13 @@
   flex-wrap: wrap;
   align-items: baseline;
   
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 768px) {
       padding: 60px 0px 60px 0px;
     }
   
 }
 
-.footer-flex {
-  // display: flex;
-  // align-items: baseline;
-  
-  // flex-direction: column;
-  // align-items: center;
-  // text-align: center;
 
-  @media screen and (min-width: 767px) {
-    display: flex;
-    align-items: baseline;
-    flex-wrap: wrap;
-  }
-}
 
 .footer-icon {
   display: flex;
@@ -57,19 +44,6 @@
 
 .footer-icon-list .footer-icon-item + .footer-icon-item {
   margin-left: 10px;
-}
-
-.footer-right-contacts {
-  margin-left: 0px;
-  margin-bottom: 60px;
-  text-align: center;
-
-  @media screen and (min-width: 768px) {
-    margin-left: 165px;
-  }
-  @media screen and (min-width: 1200px) {
-    margin-left: 95px;
-  }
 }
 
 .footer-icon-link {
@@ -154,9 +128,70 @@
   margin-bottom: 60px;
   text-align: center;
   
-
+  @media screen and (min-width: 768px) {
+    margin-left: 0px;
+  }
   @media screen and (min-width: 1200px) {
     margin-bottom: 0px;
+  }
+}
+
+.footer-right-contacts {
+  margin-left: 0px;
+  margin-bottom: 60px;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 2px;
+    margin-left: 0px;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 95px;
+  }
+}
+
+.footer-column {
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  // justify-content: center;
+  // flex-direction: row;
+  // width: calc((100% - 30px)/2);;
+  // flex-direction: column;
+  // align-items: stretch;
+  // justify-content: space-around;
+  // justify-content: left;
+  
+}
+
+.footer-flex {
+  // display: flex;
+  // align-items: baseline;
+
+  // flex-direction: column;
+  // align-items: center;
+  // text-align: center;
+
+  // margin: 0 0 60px 0;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    // flex-direction: column;
+    // align-items: baseline;
+    // flex-wrap: wrap;
+    // flex-direction: column;
+    align-items: center;
+    // width: calc((100% - 30px)/2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
   }
 }
 
