@@ -44,6 +44,10 @@ body {
   text-decoration: none;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 :root {
   --bg-color: #ffffff;
   --aсcent-color: #2196f3;
