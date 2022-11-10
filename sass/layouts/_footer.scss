@@ -71,9 +71,8 @@
   display: inline-flex;
   margin-bottom: 20px;
 
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 1200px) {
     color: var(--logo-white-color);
-    font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     

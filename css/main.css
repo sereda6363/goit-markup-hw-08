@@ -568,11 +568,17 @@ body {
 .clients__title {
   margin-bottom: 50px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 
 .clients__list {
@@ -696,12 +702,18 @@ body {
 
 .hero-team-title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   margin-bottom: 50px;
+}
+@media screen and (min-width: 1200px) {
+  .hero-team-title {
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 
 .hero-team-list {
@@ -845,10 +857,9 @@ body {
   display: inline-flex;
   margin-bottom: 20px;
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 1200px) {
   .footer-logo {
     color: var(--logo-white-color);
-    font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
   }
