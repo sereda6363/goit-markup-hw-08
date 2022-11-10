@@ -295,6 +295,9 @@ body {
   border: none;
   padding: 0;
 }
+.menu-open-btn:focus, .menu-open-btn:hover {
+  fill: var(--aсcent-color);
+}
 @media screen and (min-width: 767px) {
   .menu-open-btn {
     display: none;
