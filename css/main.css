@@ -969,8 +969,8 @@ body {
 }
 @media screen and (min-width: 768px) {
   .subscription-footer {
-    margin: auto;
-    flex-direction: column;
+    margin: 0 auto;
+    width: 450px;
     display: flex;
   }
 }
@@ -978,7 +978,6 @@ body {
   .subscription-footer {
     display: flex;
     flex-wrap: nowrap;
-    flex-direction: column;
     width: 100%;
     justify-content: flex-start;
     align-items: flex-start;
@@ -1025,7 +1024,7 @@ body {
   justify-content: center;
   margin: 0 auto;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .subscription-button {
     flex-wrap: nowrap;
   }
@@ -1053,6 +1052,11 @@ body {
   margin-top: 20px;
 }
 @media screen and (min-width: 768px) {
+  .subscription-btn {
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
   .subscription-btn {
     margin-top: 0px;
     margin-left: 12px;
