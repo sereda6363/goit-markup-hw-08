@@ -234,6 +234,10 @@
   background-color: rgba(0, 0, 0, 0);
   border: none;
   padding: 0;
+    &:focus,
+    &:hover {
+      fill: var(--aсcent-color);
+    }
 }
 
 .modal-open-icon,
