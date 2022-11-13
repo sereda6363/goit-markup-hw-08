@@ -8,42 +8,42 @@
   padding: 118px 0px 118px 0px;
   margin-left: auto;
   margin-right: auto;
-  background-image: var(--bg-gradient), url(/images/header-bg-mob-1x.jpg);
+  background-image: var(--bg-gradient), url(../images/header-bg-mob-1x.jpg);
 
   @media screen and (max-width: 480px) {
-    background-image: var(--bg-gradient), url(/images/header-bg-mob-1x.jpg);
+    background-image: var(--bg-gradient), url(../images/header-bg-mob-1x.jpg);
     background-size: cover;
     width: 100%;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       .box {
-        background-image: var(--bg-gradient), url(/images/header-bg-mob-2x.jpg);
+        background-image: var(--bg-gradient), url(../images/header-bg-mob-2x.jpg);
       }
     }
   }
 
   @media screen and (min-width: 768px) {
-    background-image: var(--bg-gradient), url(/images/header-bg-tabl-1x.jpg);
+    background-image: var(--bg-gradient), url(../images/header-bg-tabl-1x.jpg);
     width: 768px;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       .box {
-        background-image: var(--bg-gradient), url(/images/header-bg-tabl-2x.jpg);
+        background-image: var(--bg-gradient), url(/..images/header-bg-tabl-2x.jpg);
       }
     }
   }
 
   @media screen and (min-width: 1200px) {
     padding: 200px 0px 200px 0px;
-    background-image: var(--bg-gradient), url(/images/header-bg-desk-1x.jpg);
+    background-image: var(--bg-gradient), url(../images/header-bg-desk-1x.jpg);
     width: 100%;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       .box {
-        background-image: var(--bg-gradient), url(/images/header-bg-desk-2x.jpg);
+        background-image: var(--bg-gradient), url(../images/header-bg-desk-2x.jpg);
       }
     }
   }
